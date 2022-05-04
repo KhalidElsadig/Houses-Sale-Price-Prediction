@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)file:///C:/Users/KHALID/vs%20code/data%20science%20projects/Sale%20House%20predection%20using%20machine%20learning/client/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>House sale  Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="./index_files/css" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="./index_files/bootstrap.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="./index_files/style.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Houses Sale Price</h1>
+						</div>
+						<form action="http://localhost:8000/predicted_price" method="POST">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span  class="form-label">House Quality </span>
+											<div class="form-label">
+														<select name="home_quality" tabindex="-1" class="form-control" aria-hidden="true">
+													<option value="19">Very Excellent</option>
+													<option value="16">Excellent</option>
+													<option value="14">Very Good</option>
+													<option value="10">Good</option>
+													<option value="6">Bad</option></select>
+								            </div>
+							        </div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Ground living Area </span>
+										<input class="form-control" type="number" name="grlivarea" placeholder="Area in squared Meter ">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Porche Area </span>
+										<input class="form-control" type="number" name="porch_area" placeholder="Area in squared Meter ">
+									</div>
+								</div>
+							    <div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Number of Bathes </span>
+										<input class="form-control" type="number" name="num_bath" step=".01" placeholder="1 for full and 0.5 for half ">
+									</div>	
+								</div>
+
+							    <div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Area </span>                                           </span>
+										<input class="form-control" type="number" name="area" placeholder="Area in squared Meter ">
+								    </div>	
+							    </div>
+							    <div class="col-sm-6">
+								    <div class="form-group">
+									<span class="form-label">Garage Cars Capacity</span>
+									<input class="form-control" type="number" name="garagecars" placeholder="number of Cars"  >
+								    </div>
+							    </div>
+						        <div class="col-sm-6">
+								    <div class="form-group">
+									<span class="form-label">First floor Area </span>
+									<input class="form-control" type="number" name="firstfloorarea" placeholder="Area in squared Meter ">
+								    </div>	
+							    </div>
+
+							    <div class="col-sm-6">
+								    <div class="form-group">
+									<span class="form-label">Building Age</span>                                           </span>
+									<input class="form-control" type="number" name="Age" placeholder="Age in Years ">
+							        </div>	
+						        </div>
+								<div class="col-sm-6">
+							        <div class="form-group">
+								<span class="form-label">Remodeling Year </span>
+								<input class="form-control" type="number" name="yearremodadd" placeholder="Remodeling Year">
+							        </div>	
+						        </div>
+						        <div class="col-sm-6">
+							        <div class="form-group">
+								<span class="form-label">External Quality </span>
+                                            <div class="form-label">
+                                                <select name="ExterQual" tabindex="-1" class="form-control" aria-hidden="true">
+                                            <option value="0">Excellent</option>
+                                            <option value="1">Good</option>
+                                            <option value="2">Average</option>
+                                            <option value="3">Fair</option>
+                                            <option value="4">Poor</option></select>
+								</span>
+						            </div>	
+					            </div>
+							    </div>
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="form-group">
+									</div>
+								</div>
+								<div class="col-sm-7">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="form-group">
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="form-group">
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn" value='predict!'>Predict</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

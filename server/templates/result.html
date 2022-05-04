@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)file:///C:/Users/KHALID/vs%20code/data%20science%20projects/Sale%20House%20predection%20using%20machine%20learning/client/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>House sale  Prediction HTML Template</title>
+	<link href="{{ url_for('static', path='./index_files/css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', path='/index_files/bootstrap.min.css') }}" rel="stylesheet">
+
+	<link href="{{ url_for('static', path='./index_files/style.css') }}" rel="stylesheet">
+
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Houses Sale Price</h1>
+						</div>
+						<form action="http://localhost:8000/" method="GET">
+						<h1 style= color:white> Price Prediction: {{ id }} $</h1>
+						<button href="/" class="submit-btn">go back to home page</button></form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) --></html>

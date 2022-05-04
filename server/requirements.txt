@@ -1,0 +1,9 @@
+fastapi
+pathlib==1.0.1
+scipy==1.6.1
+python==3.9.2
+uvicorn
+joblib
+vloop
+httptools
+jinja2==2.11.2
