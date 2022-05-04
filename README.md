@@ -39,4 +39,4 @@ Here is all model scores in the training set:
 
 ## Productionization
 
-In this step, I built a FAST API endpoint that was hosted on heroku App website. The API endpoint takes in a request with a list of values from a job listing and returns an estimated price.
+In this step, I built a FAST API endpoint that was hosted on heroku App website. The API endpoint takes in a request with a list of values from several parameters including house age and area  and returns an estimated price.
