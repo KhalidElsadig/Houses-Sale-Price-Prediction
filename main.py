@@ -41,11 +41,11 @@ def load_saved_model_data():
     print('loading model data ')
     global __data_columns
     global __model
-    pathcolumns= str(Path(__file__).parent.absolute()/"model/columns.json")
+    pathcolumns= "columns.json"
     with open(pathcolumns,'r') as f :
         __data_columns = json.load(f)['data_columns']
         print('columns:',__data_columns)
-    pathmodel= str(Path(__file__).parent.absolute()/"model\Random forest model.pkl")    
+    pathmodel= "Random forest model.pkl"
 
     with open (pathmodel,'rb') as f:
             __model= load(f)
@@ -57,14 +57,10 @@ def load_saved_model_data():
 # Build web app
 load_saved_model_data()
 app = FastAPI()
-temp = Path(__file__).parent.absolute()/'server'
-templates = Jinja2Templates(directory=str(Path(temp,"templates")))
+templates = Jinja2Templates("templates")
 
-app.mount(
-    "/server/static",
-    StaticFiles(directory=Path(__file__).parent.absolute() / "server/static"),
-    name="static",
-)
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 @app.get('/',response_class=HTMLResponse)
 async def home(request:Request):
@@ -86,5 +82,5 @@ grlivarea:float= Form(...),
     response =get_predicted_price(num_bath,porch_area,yearremodadd,firstfloorarea,home_quality,Age, garagecars,area,ExterQual,grlivarea)
     return templates.TemplateResponse("result.html", {"request": request,"id": response})
 #Run web app
-if __name__ == "__app__":
-    uvicorn.run(app)
+if __name__ == "__main__":
+    uvicorn.run(app,host='127.0.0.1',port=8000)
