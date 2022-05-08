@@ -86,5 +86,5 @@ grlivarea:float= Form(...),
     response =get_predicted_price(num_bath,porch_area,yearremodadd,firstfloorarea,home_quality,Age, garagecars,area,ExterQual,grlivarea)
     return templates.TemplateResponse("result.html", {"request": request,"id": response})
 #Run web app
-if __name__ == "__main__":
+if __name__ == "__app__":
     uvicorn.run(app)
