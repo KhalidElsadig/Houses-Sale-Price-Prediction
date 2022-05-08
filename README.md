@@ -4,12 +4,12 @@
 * Investigate more than **70** columns.
 * Engineered features related to buying decision criteria.
 * Optimized Linear, Lasso, Ridge, and Random Forest Regressors, Decision Tree Regressors, Support Vector Machine Regressor and more using GridsearchCV to reach the best model.
-* Built a client facing API using FAST API.
+* Built a client facing API using FAST API. [App link!](https://house-sale-price.herokuapp.com "App link!")
 
 ## Code ENV
 
-**Python Version:** 3.9  
-**Packages:** Pandas, Numpy, Sklearn, Matplotlib, Seaborn, FAST API
+**Python Version:** 3.9.2  
+**Packages:** Pandas, Numpy, Sklearn, Matplotlib, Seaborn, FAST API, uvicorn, gunicorn
 
 ## Data Cleaning
 
@@ -39,4 +39,4 @@ Here is all model scores in the training set:
 
 ## Productionization
 
-In this step, I built a FAST API endpoint that was hosted on heroku App website. The API endpoint takes in a request with a list of values from several parameters including house age and area  and returns an estimated price.
+In this step, I built a FAST API endpoint that was hosted on heroku App website. The API endpoint takes in a request with a list of values from several parameters including house age and area  and returns an estimated price. [App link!](https://house-sale-price.herokuapp.com "App link!")
