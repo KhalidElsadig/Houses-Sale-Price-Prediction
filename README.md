@@ -4,7 +4,7 @@
 * Investigate more than **70** columns.
 * Engineered features related to buying decision criteria.
 * Optimized Linear, Lasso, Ridge, and Random Forest Regressors, Decision Tree Regressors, Support Vector Machine Regressor and more using GridsearchCV to reach the best model.
-* Built a client facing API using FAST API. [App link!](https://house-sale-price.herokuapp.com){:target="_blank"}
+* Built a client facing API using FAST API. [App link!](https://house-sale-price.herokuapp.com)
 
 ## Code ENV
 
