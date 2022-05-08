@@ -59,19 +59,7 @@ load_saved_model_data()
 app = FastAPI()
 temp = Path(__file__).resolve().parent.absolute()/'server'
 templates = Jinja2Templates(directory=str(Path(temp,"templates")))
-origins = [
-    "http://localhost",
-    "http://localhost:8000"
-   "http://localhost:8080",
-]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 app.mount(
     "/server/static",
     StaticFiles(directory=Path(__file__).parent.absolute() / "server/static"),
@@ -99,4 +87,4 @@ grlivarea:float= Form(...),
     return templates.TemplateResponse("result.html", {"request": request,"id": response})
 #Run web app
 if __name__ == "__main__":
-    uvicorn.run(app,port=8000,host='localhost')
+    uvicorn.run(app)
