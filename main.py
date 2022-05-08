@@ -41,11 +41,11 @@ def load_saved_model_data():
     print('loading model data ')
     global __data_columns
     global __model
-    pathcolumns= str(Path(__file__).parent.absolute()/"model/columns.json")
+    pathcolumns= str(Path(__dirname).parent.absolute()/"model/columns.json")
     with open(pathcolumns,'r') as f :
         __data_columns = json.load(f)['data_columns']
         print('columns:',__data_columns)
-    pathmodel= str(Path(__file__).parent.absolute()/"model\Random forest model.pkl")    
+    pathmodel= str(Path(__dirname).parent.absolute()/"model\Random forest model.pkl")    
 
     with open (pathmodel,'rb') as f:
             __model= load(f)
